@@ -1,0 +1,52 @@
+{
+    "name": "Trafiklab Laraval departure board website demo",
+    "description": "A demo application showing how to use the Trafiklab SDKs to build a simple website which shows the next departures",
+    "keywords": [
+        "Trafiklab",
+        "ResRobot",
+        "demo",
+        "example"
+    ],
+    "website": "https://trafiklab.se",
+    "repository": "https://github.com/trafiklab/demo-departure-board-site-php",
+    "logo": "https://avatars2.githubusercontent.com/u/6614637?s=200&v=4",
+    "env": {
+        "APP_DATAPROVIDER": {
+            "description": "The data provider to use. Choose between 'SL' or 'RESROBOT' without the ''. SL offers detailed data for Stockholm, ResRobot offers data for entire Sweden. More information at https://trafiklab.se/trafiklab",
+            "required": true,
+            "value": "RESROBOT"
+        },
+        "RESROBOT_TIMETABLE_KEY": {
+            "description": "Your API key for the Trafiklab ResRobot - Stolptidtabeller 2 API. You can leave this to the default value, but some features for ResRobot will not work. You can change this later. Learn how to create an API key at https://www.trafiklab.se/hur-gor-jag.",
+            "required": true,
+            "value": "change-me-to-use-this-api"
+        },
+        "RESROBOT_ROUTEPLANNING_KEY": {
+            "description": "Your API key for the Trafiklab ResRobot Reseplanerare API. You can leave this empty, but some features for ResRobot will not work. You can change this later. Learn how to create an API key at https://www.trafiklab.se/hur-gor-jag.",
+            "required": true,
+            "value": "change-me-to-use-this-api"
+        },
+        "SL_TIMETABLE_KEY": {
+            "description": "Your API key for the Trafiklab SL Realtidsinformation 4 API. You can leave this empty, but some features for SL will not work. You can change this later. Learn how to create an API key at https://www.trafiklab.se/hur-gor-jag.",
+            "required": true,
+            "value": "change-me-to-use-this-api"
+        },
+        "SL_STATIONLOOKUP_KEY": {
+            "description": "Your API key for the Trafiklab SL Platsuppslag API. You can leave this empty, but  some features for SL will not work. You can change this later. Learn how to create an API key at https://www.trafiklab.se/hur-gor-jag.",
+            "required": true,
+            "value": "change-me-to-use-this-api"
+        },
+        "LOG_CHANNEL": {
+            "description": "This option is required to redirect log output to Heroku.",
+            "value": "errorlog"
+        },
+        "APP_USER_AGENT": {
+            "description": "The user agent to use when making requests to Trafiklab.",
+            "value": "Trafiklab-departure-board-demo"
+        },
+        "APP_NAME": {
+            "description": "The name for your app.",
+            "value": "Trafiklab-departure-board-demo"
+        }
+    }
+}
